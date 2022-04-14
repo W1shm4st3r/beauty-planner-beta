@@ -20,7 +20,7 @@ public class CosmeticRemover {
                     int id = scanner.nextInt();
                     if (cosmeticsList.getCosmeticsIds().contains(id)) {
                         cosmeticsList.removeCosmeticFromList(id);
-                        System.out.println("Cosmetiv removed correctly");
+                        System.out.println("Cosmetic removed correctly");
                     } else {
                         System.out.println("No such ID!");
                     }
