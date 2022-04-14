@@ -28,7 +28,7 @@ public class CosmeticAdder {
             );
             cosmeticsList.addCosmeticToList(c);
             cosmeticsList.addIdToList(c.getId());
-            System.out.println("Cosmetic added properly!");
+            System.out.println("Cosmetic added correctly");
         }
     }
 
