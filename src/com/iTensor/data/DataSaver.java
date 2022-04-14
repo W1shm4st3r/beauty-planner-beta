@@ -11,6 +11,6 @@ public class DataSaver {
         for (Cosmetic c : cosmeticsList.getCosmeticList()) {
             writer.save(c);
         }
-        System.out.println("Poprawnie zapisano");
+        System.out.println("Changes saved correctly");
     }
 }
