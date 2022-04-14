@@ -21,7 +21,7 @@ public class EvidenceMenu {
             try {
                 option = scanner.nextInt();
             } catch (InputMismatchException e) {
-                System.out.println("Podaj liczbe!");
+                System.out.println("You have to type a number!");
                 continue;
             }
             switch (option) {
