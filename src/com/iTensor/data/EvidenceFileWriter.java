@@ -17,14 +17,14 @@ public class EvidenceFileWriter {
             br.newLine();
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("ERROR: Nie mozna otworzyc pliku cosmetics.txt");
+            System.out.println("File cosmetics.txt could not be opened");
         } finally {
             try {
                 if (br != null) {
                     br.close();
                 }
             } catch (IOException e) {
-                System.out.println("ERROR: Nie mozna zamknac pliku cosmetics.txt");
+                System.out.println("File cosmetics.txt could not be opened");
                 e.printStackTrace();
             }
         }
@@ -38,14 +38,14 @@ public class EvidenceFileWriter {
             br.flush();
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("ERROR: Nie mozna otworzyc pliku cosmetics.txt");
+            System.out.println("File cosmetics.txt could not be opened");
         } finally {
             try {
                 if (br != null) {
                     br.close();
                 }
             } catch (IOException e) {
-                System.out.println("ERROR: Nie mozna zamknac pliku cosmetics.txt");
+                System.out.println("File cosmetics.txt could not be opened");
                 e.printStackTrace();
             }
         }
