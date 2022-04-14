@@ -15,7 +15,7 @@ public class DataLoader {
             int applications = Integer.parseInt(loadedCosmeticsInfo.get(i++));
             String openingDate = loadedCosmeticsInfo.get(i++);
             String validityTerm = loadedCosmeticsInfo.get(i++);
-            CosmeticAdder.addCosmetic(id, name, applications, openingDate, validityTerm);;
+            CosmeticAdder.addCosmetic(id, name, applications, openingDate, validityTerm);
         }
     }
 }
