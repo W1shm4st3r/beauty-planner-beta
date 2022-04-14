@@ -22,6 +22,7 @@ public class EvidenceFileReader {
         while ((st = br.readLine()) != null) {
             isEmpty = false;
             if (st.contains("-----") || st.equals("")) {
+                continue;
             } else {
                 cosmeticInfo.add(st);
                 }
