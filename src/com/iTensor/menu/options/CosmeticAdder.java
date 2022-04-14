@@ -10,16 +10,16 @@ public class CosmeticAdder {
 
     public static void addCosmetic() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Na pewno? y/n");
+        System.out.println("Are you sure? y/n");
         String decision = scanner.next();
         if (decision.equals("y") || decision.equals("Y")) {
-            System.out.print("Nazwa: ");
+            System.out.print("Name: ");
             scanner.useDelimiter("\n");
             String name;
             name = scanner.next();
-            System.out.print("Data otwarcia: ");
+            System.out.print("Opening date: ");
             String openingDate = scanner.next();
-            System.out.print("Termin waznosci: ");
+            System.out.print("Validity term: ");
             String validityTerm = scanner.next();
             Cosmetic c = new Cosmetic(
                     name,
@@ -28,7 +28,7 @@ public class CosmeticAdder {
             );
             cosmeticsList.addCosmeticToList(c);
             cosmeticsList.addIdToList(c.getId());
-            System.out.println("Poprawnie dodano kosmetyk");
+            System.out.println("Cosmetic added properly!");
         }
     }
 
