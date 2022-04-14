@@ -10,21 +10,21 @@ public class MenuDisplayer {
 
     public static void displayMenu() {
         System.out.println("-----------------------------");
-        System.out.println("KALKULATOR ZUZYCIA KOSMETYKOW");
+        System.out.println("COSMETICS CONSUMPTION CALCULATOR");
         System.out.println("-----------------------------");
-        System.out.println("LISTA KOSMETYKOW:");
+        System.out.println("LIST OF COSMETICS:");
         for (Cosmetic c : cosmeticsList.getCosmeticList()) {
-            System.out.println(c.getId() + ". " + c.getName() + " | Liczba aplikacji: " + c.getApplications());
+            System.out.println(c.getId() + ". " + c.getName() + " | Number of applications: " + c.getApplications());
         }
         System.out.println("-----------------------------");
-        System.out.println("1. Dodaj kosmetyk");
-        System.out.println("2. Dodaj aplikacje");
-        System.out.println("3. Edytuj kosmetyk");
-        System.out.println("4. Lista kosmetykow");
-        System.out.println("5. Usun kosmetyk");
-        System.out.println("6. Zapisz zmiany");
-        System.out.println("0. Zakoncz");
-        System.out.print("Opcja: ");
+        System.out.println("1. Add cosmetic");
+        System.out.println("2. Add application");
+        System.out.println("3. Edit cosmetic");
+        System.out.println("4. List of cosmetics");
+        System.out.println("5. Remove cosmetic");
+        System.out.println("6. Save changes");
+        System.out.println("0. Exit");
+        System.out.print("Option: ");
     }
 
     public static void pressEnter() {
