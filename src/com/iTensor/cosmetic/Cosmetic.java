@@ -35,11 +35,11 @@ public class Cosmetic implements Savable {
 
     // Methods
     public void info() {
-        System.out.println("Kosmetyk " + getId());
-        System.out.println("Nazwa:            " + getName());
-        System.out.println("Data otwarcia:    " + getOpeningDate());
-        System.out.println("Termin waznosci:  " + getValidityTerm());
-        System.out.println("Liczba aplikacji: " + getApplications());
+        System.out.println("Cosmetic " + getId());
+        System.out.println("Name:            " + getName());
+        System.out.println("Opening date:    " + getOpeningDate());
+        System.out.println("Validity term:  " + getValidityTerm());
+        System.out.println("Number of applications: " + getApplications());
         System.out.println("-----------------------------");
     }
 
