@@ -9,24 +9,24 @@ public class CosmeticRemover {
     public static void removeCosmetic() {
         Scanner scanner = new Scanner(System.in);
         if (cosmeticsList.getCosmeticList().isEmpty()) {
-            System.out.println("Lista jest pusta!");
+            System.out.println("The list is empty!");
         } else {
             try {
-                System.out.println("Na pewno? y/n");
+                System.out.println("Are you sure? y/n");
                 String decision = scanner.next();
                 if (decision.equals("y") || decision.equals("Y")) {
                     System.out.println("");
-                    System.out.print("Podaj ID kosmetyku: ");
+                    System.out.print("Type ID of a cosmetic you want to remove: ");
                     int id = scanner.nextInt();
                     if (cosmeticsList.getCosmeticsIds().contains(id)) {
                         cosmeticsList.removeCosmeticFromList(id);
-                        System.out.println("Poprawnie usnieto kosmetyk");
+                        System.out.println("Cosmetiv removed correctly");
                     } else {
-                        System.out.println("Nie ma takiego ID!");
+                        System.out.println("No such ID!");
                     }
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Podaj liczbe!");
+                System.out.println("You have to type a number!");
             }
         }
     }
